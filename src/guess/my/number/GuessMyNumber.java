@@ -41,8 +41,7 @@ public class GuessMyNumber {
          numberOfTry = input.nextInt();
          
         randomNumber = random.nextInt(limit) + 1;
-        System.out.println(randomNumber);
-        
+       
         System.out.println("Please type in your guess.");
          while (!input.hasNextInt())
         {
@@ -83,7 +82,8 @@ public class GuessMyNumber {
                 }
             if (guess != randomNumber && i == numberOfTry-1)
                 {
-                    System.out.println("Game Over! You didn't guess the number!");
+                    System.out.println("Game Over!");
+                    System.out.println("The right answer was: " + randomNumber);
                     break;
                 }
             
